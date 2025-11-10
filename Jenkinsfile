@@ -7,16 +7,16 @@ pipeline {
     git 'Linuxgit'
   }
 
-  environment {
-    CHECKMARX_CREDENTIALS_ID = 'SAST'
-    CHECKMARX_USERNAME = credentials('CxUser')
-    CHECKMARX_PASSWORD = credentials('CxPass')
-    CHECKMARX_PROJECT_NAME = credentials('CxProject')
-    CHECKMARX_SERVER_URL = credentials('CxServer')
-    CHECKMARX_SCA = credentials('CxSCA')
-    PROJECT_NAME = 'ReportScaPipeline'
-    CHECKMARX_SCA_SERVER_URL = 'https://api-sca.checkmarx.net'
-  }
+//   environment {
+//     CHECKMARX_CREDENTIALS_ID = 'SAST'
+//     CHECKMARX_USERNAME = credentials('CxUser')
+//     CHECKMARX_PASSWORD = credentials('CxPass')
+//     CHECKMARX_PROJECT_NAME = credentials('CxProject')
+//     CHECKMARX_SERVER_URL = credentials('CxServer')
+//     CHECKMARX_SCA = credentials('CxSCA')
+//     PROJECT_NAME = 'ReportScaPipeline'
+//     CHECKMARX_SCA_SERVER_URL = 'https://api-sca.checkmarx.net'
+//   }
 
   stages {
     stage('Welcome') {
