@@ -25,18 +25,18 @@ pipeline {
       }
     }
 
-    // stage('Checkout') {
-    //   steps {
-    //     checkout([$class: 'GitSCM',
-    //       branches: [
-    //         [name: '*/master']
-    //       ],
-    //       userRemoteConfigs: [
-    //         [url: 'https://github.com/vbarhate/JavaVulnerableLabE.git']
-    //       ]
-    //     ])
-    //   }
-    // }
+    stage('Checkout') {
+      steps {
+        checkout([$class: 'GitSCM',
+          branches: [
+            [name: '*/master']
+          ],
+          userRemoteConfigs: [
+            [url: 'https://github.com/vbarhate/JavaVulnerableLabE.git']
+          ]
+        ])
+      }
+    }
 
     // stage('Checkmarx Security Scan') {
     //   steps {
