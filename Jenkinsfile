@@ -4,7 +4,7 @@ pipeline {
   }
 
   tools {
-    git 'Default'
+    git 'Linuxgit'
   }
 
   environment {
