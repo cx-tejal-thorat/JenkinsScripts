@@ -85,11 +85,11 @@ pipeline {
               !OSADependencies.json, !**/node_modules/**/*, !**/.cxsca-results.json, !**/.cxsca-sast-results.json, !.checkmarx/cx.config
           ''',
           fullScanCycle: 10,
-          generatePdfReport: true,
+          generateScaReport: true,
           projectName: 'ReportScaPipeline',
           serverUrl: 'https://api-sca.checkmarx.net',
           sastEnabled: false,
-          scaReportFormat: 'cyclonedxpdf',
+          scaReportFormat: 'PDF',
           vulnerabilityThresholdResult: 'FAILURE',
           waitForResultsEnabled: true
         ])
