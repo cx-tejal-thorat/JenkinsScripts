@@ -89,7 +89,7 @@ pipeline {
           projectName: 'ReportScaPipeline',
           serverUrl: 'https://api-sca.checkmarx.net',
           sastEnabled: false,
-          scaReportFormat: 'PDF',
+          scaReportFormat: 'cyclonedxpdf',
           vulnerabilityThresholdResult: 'FAILURE',
           waitForResultsEnabled: true
         ])
